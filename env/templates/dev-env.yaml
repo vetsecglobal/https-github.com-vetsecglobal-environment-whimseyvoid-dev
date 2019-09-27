@@ -1,0 +1,53 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jx
+  name: dev
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/vetsecglobal/https-github.com-vetsecglobal-environment-whimseyvoid-dev.git
+  teamSettings:
+    appsRepository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    buildPackName: kubernetes-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    dockerRegistryOrg: silicon-synapse-254003
+    envOrganisation: vetsecglobal
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: vet-bot
+    promotionEngine: Prow
+    prowConfig: Legacy
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    storageLocations:
+    - bucketUrl: gs://lightning-bolt-lts-bd1e6653-8573-444c-b6c8-e9a1b08ffd13
+      classifier: default
+    - bucketUrl: gs://lightning-bolt-lts-bd1e6653-8573-444c-b6c8-e9a1b08ffd13
+      classifier: logs
+    useGitOps: true
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}

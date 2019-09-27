@@ -1,0 +1,34 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDCzCCAfOgAwIBAgIQArr0iDojvfgHda36fIU7hjANBgkqhkiG9w0BAQsFADAv
+    MS0wKwYDVQQDEyQ4ZDMxYTg4ZS05NTZiLTQzNjYtYjY2Ny04ZjUyNjdjMWUxZDcw
+    HhcNMTkwOTI3MDUwMDA2WhcNMjQwOTI1MDYwMDA2WjAvMS0wKwYDVQQDEyQ4ZDMx
+    YTg4ZS05NTZiLTQzNjYtYjY2Ny04ZjUyNjdjMWUxZDcwggEiMA0GCSqGSIb3DQEB
+    AQUAA4IBDwAwggEKAoIBAQDdfLOGL1MVNCnDAZVbQr1+GabRO+l7RtWZeGoxW3Zj
+    1Y0CI9TlqXTvdvi9ETdQoElr5QqjfTRl6SxV4kpBy2uTDOfIrqAa/RXmLBQ9MKmN
+    jT+1XwhRI0DvWxeSuppyQkb75dnpnyAIDFIKo6KG5cd69BdkfvRtTwkq13M4te7I
+    ROoLjciDi24v0GlJe2UW4kwVu5il6vH0THyNRQxI+s3XRNGDFO486bN1dMAKUx9X
+    dimZN2c2amPdMCdXUnep4K0J4vLp5i7keCEKfeItmhk6j28pu6NYr4l+Enyummdr
+    5lygjDJgxQwr3Yqc/ynS8GjXc6Ru1FcCQHzKD1hnqqoxAgMBAAGjIzAhMA4GA1Ud
+    DwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBx
+    iWdRkg5SVCwxLdCiyTqeiiCDYrsXCkVqQdLmemT+n/UQMEur8IrB4D1ntOQzVeP+
+    3it9k7FJS9WYb5JWTq1c9fZYf3MioyfKvMqXrslC54Mg7Xk+NxyPCm6q10LHHMKv
+    S6Fy5W9HvtofBhb77FCIkNQmwXdlqVA7ePQJv/o1u2LbtFZRxtlYZ6yYUBmw0TrZ
+    OPL4IOnYOj9Hk50GPVQFPMyejWDfshfDcC/o5/cvicHwJ8KhtX8/3KWePoqlgUw8
+    1VX8Urc7P9qicZPNg/bmn0u9BzPfBfhPR0IOT1JWLWmV1rN4WwYdz4EtJK8a01Ou
+    SOzZaAudfpfTavgUooS4
+    -----END CERTIFICATE-----
+  clusterName: lightning-bolt
+  jx-install-version: 2.0.721
+  kubeProvider: gke
+  projectID: silicon-synapse-254003
+  secretsLocation: vault
+  server: https://35.228.153.146
+  systemVaultName: jx-vault-lightning-bol
+  zone: europe-north1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config

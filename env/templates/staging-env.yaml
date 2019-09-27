@@ -1,0 +1,23 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: staging
+spec:
+  cluster: staging.vets.ml
+  kind: Permanent
+  label: Staging
+  namespace: jx-staging
+  order: 100
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Auto
+  remoteCluster: true
+  source:
+    ref: master
+    url: https://github.com/vetsecglobal/environment-whimseyvoid-dev
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}

@@ -1,0 +1,23 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: production
+spec:
+  cluster: prod.vets.ml
+  kind: Permanent
+  label: Production
+  namespace: jx-production
+  order: 200
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Manual
+  remoteCluster: true
+  source:
+    ref: master
+    url: https://github.com/vetsecglobal/environment-whimseyvoid-production
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}
